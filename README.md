@@ -11,12 +11,20 @@ npm i persmail
 ### Usage
 
 ```js
-const { domains } = require('persmail')
+const { domains, host, sendable } = require('persmail')
 
-// Check of domains includes your email address host
-const host = 'hello@example.com'.split('@')[1]
-if (domains.includes(host)) {
+// Check of domains includes your email host
+if (domains.includes('gmail.com')) {
   // is personal email
+}
+
+// Get the host from an email address
+const h = host('vidar@example.com')
+// h is 'example.com'
+
+// Check complete email address
+if (sendable('vidar@example.com')) {
+  // email address is not in the domains list
 }
 ```
 

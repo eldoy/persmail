@@ -1,5 +1,3 @@
-const domains = require('./data/domains.json')
-const parse = require('./lib/parse.js')
-const sendable = require('./lib/sendable.js')
+const { domains, host, sendable } = require('./lib/persmail.js')
 
-module.exports = { domains, parse, sendable }
+module.exports = { domains, host, sendable }
