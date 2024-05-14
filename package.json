@@ -1,6 +1,6 @@
 {
   "name": "persmail",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "Personal email providers database",
   "main": "index.js",
   "scripts": {
