@@ -31,7 +31,7 @@ if (persmail.sendable('vidar@example.com')) {
 }
 
 // Check if email is personal
-var isPersonal = persmail.personal(email)
+var isPersonal = persmail.personal('vidar@example.com')
 ```
 
 Created by [Eldøy Projects.](https://eldoy.com)
