@@ -11,7 +11,7 @@ npm i persmail
 ### Usage
 
 ```js
-const persmail = require('persmail')
+var persmail = require('persmail')
 
 // Check of domains includes your email host
 if (persmail.domains.includes('gmail.com')) {
@@ -19,16 +19,19 @@ if (persmail.domains.includes('gmail.com')) {
 }
 
 // Get the host from an email address
-const host = persmail.host('vidar@example.com')
+var host = persmail.host('vidar@example.com')
 // host is 'example.com'
 
 // Check if host is in domains
-const sendable = persmail.has(host)
+var sendable = persmail.has(host)
 
 // Check complete email address, short cut for method above
 if (persmail.sendable('vidar@example.com')) {
   // email address is not in the domains list
 }
+
+// Check if email is personal
+var isPersonal = persmail.personal(email)
 ```
 
 Created by [Eldøy Projects.](https://eldoy.com)
