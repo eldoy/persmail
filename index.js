@@ -1,3 +1,1 @@
-const { domains, host, has, sendable } = require('./lib/persmail.js')
-
-module.exports = { domains, host, has, sendable }
+module.exports = require('./lib/persmail.js')
