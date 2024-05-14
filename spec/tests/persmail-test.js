@@ -49,9 +49,7 @@ it('personal email should be personal', ({ t }) => {
 it('company email should not be personal', ({ t }) => {
   var result = persmail.personal('post@example.com')
   t.ok(result === false)
-})
 
-it('company email should not be personal', ({ t }) => {
-  var result = persmail.personal('firmapost@example.com')
+  result = persmail.personal('firmapost@example.com')
   t.ok(result === false)
 })
